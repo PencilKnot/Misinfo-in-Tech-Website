@@ -1,0 +1,80 @@
+/* Formatting of all text and headings with background colour, text/heading colour, font type, text alignment*/
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+    justify-content: content;
+  }
+  
+h1, h2, h3 {
+    color: rgb(65, 146, 228);
+ }
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: content;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 120px;
+    text-align: justify;
+}
+  
+ /* Link Mouseover Effect */
+a {
+    color: #333;
+    text-decoration: none;
+    position: relative;
+}
+/* Make link seem as if it is growing */
+a:hover::before {
+    bottom: 0;
+    height: 100%;
+}
+/* Transition for changes */
+a::before {
+    content: '';
+    background-color: #a5ccf6;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    width: 100%;
+    height: 2px;
+    z-index: -1;
+    transition: all .3s ease-in-out;
+}
+
+/* Navigation Bar */
+nav {
+    overflow: hidden;
+  }
+  
+nav a {
+    display: inline-block;
+    text-align: center;
+    padding: 1px 4px;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+/* Align embedded form widget */
+#embedded-form{
+    text-align: center;
+}
+
+/* Fixed header that moves with user scroll */
+header {
+    position: fixed;
+    background-color: #f4f4f4;
+    width:100%;
+    margin-top: 0px;
+    padding-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1; /* Make sure it appears above all other elements */
+}
